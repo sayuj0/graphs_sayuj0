@@ -56,7 +56,7 @@ def dijkstra(graph: Dict[int, Dict[int, int]], s: int) -> Tuple[Dict[int, int], 
     return dist, path
 
 
-# ---- Bonus algorithm: Unweighted shortest paths via BFS ----
+# Bonus algorithm: Unweighted shortest paths via BFS
 def bfs_shortest_paths(graph: Dict[int, Dict[int, int]], s: int) -> Tuple[Dict[int, int], Dict[int, List[int]]]:
     dist = _ensure_all_nodes(graph)
     dist[s] = 0
